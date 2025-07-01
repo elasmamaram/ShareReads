@@ -18,7 +18,8 @@ A fully responsive book reviewing website with:
 2. Open index.html in any modern browser  
 3. For admin access:  
    - Click "Login" (top-right)  
-   - Use credentials: admin / admin
+   - Use credentials: admin / admin *note no spaces before or after the username and password
+
 
 ## Key Features Implemented  
 1. *Search System* (before book listings)  
