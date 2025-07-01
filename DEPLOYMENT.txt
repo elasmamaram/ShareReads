@@ -1,0 +1,41 @@
+# DEPLOYMENT DOCUMENTATION - ShareReads
+
+
+
+## 1. How to Run the Project Locally (Offline)
+
+To open and run the project on any computer:
+
+1. Go to our GitHub repository:  
+   https://github.com/elasmamaram/ShareReads
+
+2. Click the green *Code* button and choose *Download ZIP*.
+
+3. After downloading, extract (unzip) the folder.
+
+4. Inside the folder, double-click index.html. It will open in your browser.
+
+5. From there, you can:
+   - Search books using the search bar
+   - View the homepage design
+   - Click on the *Login* button to test the admin panel
+
+6. Use this fake login to access the admin page:
+   - Username: admin
+   - Password: admin
+
+The admin panel is just for display; it doesn’t connect to a database.
+
+---
+
+## 2. How to View the Website Online (GitHub Pages)
+
+We also deployed the website using GitHub Pages so it’s accessible online:
+
+*Live Link:*  
+https://elasmamaram.github.io/ShareReads/
+
+You don’t need to install anything. Just open the link in your browser and it works.
+
+---
+
