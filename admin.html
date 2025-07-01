@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShareReads - Admin Panel</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="css/admin.css" />
+</head>
+<body>
+  <section class="admin-panel">
+    <div class="admin-header">
+      <h2><i class="fas fa-book-open"></i> ShareReads  Admin</h2>
+      <button class="admin-logout-btn" id="logoutBtn">
+        <i class="fas fa-sign-out-alt"></i> Logout
+      </button>
+    </div>
+
+    <div class="admin-stats">
+      <div class="stat-card">
+        <div class="stat-icon"><i class="fas fa-book"></i></div>
+        <div class="stat-info">
+          <h3>Total Books</h3>
+          <p>10</p>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon"><i class="fas fa-comment"></i></div>
+        <div class="stat-info">
+          <h3>Reviews</h3>
+          <p>24</p>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon"><i class="fas fa-users"></i></div>
+        <div class="stat-info">
+          <h3>Active Users</h3>
+          <p>143</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="admin-tabs">
+      <button class="tab-btn active" data-tab="books">Books</button>
+      <button class="tab-btn" data-tab="reviews">Reviews</button>
+      <button class="tab-btn" data-tab="admins">Admins</button>
+    </div>
+
+    <div class="tab-content active" id="books-tab">
+      <button class="add-btn"><i class="fas fa-plus"></i> Add Book</button>
+      <table class="admin-table">
+        <thead>
+          <tr>
+            <th>Cover</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="images/th.webp" class="admin-book-cover" /></td>
+            <td>Wild Dark Shore</td>
+            <td>Charlotte McConaghy</td>
+            <td>
+              <button class="action-btn edit-btn"><i class="fas fa-edit"></i></button>
+              <button class="action-btn delete-btn"><i class="fas fa-trash"></i></button>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="images/81ph7llrGvL._SL1500_.jpg" class="admin-book-cover" /></td>
+            <td>The Last Wish</td>
+            <td>Andrzej Sapkowski</td>
+            <td>
+              <button class="action-btn edit-btn"><i class="fas fa-edit"></i></button>
+              <button class="action-btn delete-btn"><i class="fas fa-trash"></i></button>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="images/18505747.jpg" class="admin-book-cover" /></td>
+            <td>King of Ashes</td>
+            <td>Raymond E. Feist</td>
+            <td>
+              <button class="action-btn edit-btn"><i class="fas fa-edit"></i></button>
+              <button class="action-btn delete-btn"><i class="fas fa-trash"></i></button>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="images/219848315.jpg" class="admin-book-cover" /></td>
+            <td>The Emperor of Gladness</td>
+            <td>Ocean Vuong</td>
+            <td>
+              <button class="action-btn edit-btn"><i class="fas fa-edit"></i></button>
+              <button class="action-btn delete-btn"><i class="fas fa-trash"></i></button>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="images/R.jpeg" class="admin-book-cover" /></td>
+            <td>Great Big Beautiful Life</td>
+            <td>Emily Henry</td>
+            <td>
+              <button class="action-btn edit-btn"><i class="fas fa-edit"></i></button>
+              <button class="action-btn delete-btn"><i class="fas fa-trash"></i></button>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="images/OIP (1).webp" class="admin-book-cover" /></td>
+            <td>Iron Flame</td>
+            <td>Rebecca Yarros</td>
+            <td>
+              <button class="action-btn edit-btn"><i class="fas fa-edit"></i></button>
+              <button class="action-btn delete-btn"><i class="fas fa-trash"></i></button>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="images/OIP (2).webp" class="admin-book-cover" /></td>
+            <td>The Let Them Theory</td>
+            <td>Mel Robbins</td>
+            <td>
+              <button class="action-btn edit-btn"><i class="fas fa-edit"></i></button>
+              <button class="action-btn delete-btn"><i class="fas fa-trash"></i></button>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="images/OIP (3).webp" class="admin-book-cover" /></td>
+            <td>The Midnight Library</td>
+            <td>Matt Haig</td>
+            <td>
+              <button class="action-btn edit-btn"><i class="fas fa-edit"></i></button>
+              <button class="action-btn delete-btn"><i class="fas fa-trash"></i></button>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="images/9781804990926.jpg" class="admin-book-cover" /></td>
+            <td>Lessons in Chemistry</td>
+            <td>Bonnie Garmus</td>
+            <td>
+              <button class="action-btn edit-btn"><i class="fas fa-edit"></i></button>
+              <button class="action-btn delete-btn"><i class="fas fa-trash"></i></button>
+            </td>
+          </tr>
+          <tr>
+            <td><img src="images/9780593321201_custom-329d20529955fe0f6c19eb82baf676fc2d86c1a1-s1100-c50.jpg" class="admin-book-cover" /></td>
+            <td>Tomorrow, and Tomorrow, and Tomorrow</td>
+            <td>Gabrielle Zevin</td>
+            <td>
+              <button class="action-btn edit-btn"><i class="fas fa-edit"></i></button>
+              <button class="action-btn delete-btn"><i class="fas fa-trash"></i></button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="tab-content" id="reviews-tab">
+      <div class="reviews-panel">
+        <h3><i class="fas fa-comments"></i> Recent Reviews</h3>
+        <div class="reviews-list">
+          <div class="admin-review-item">
+            <div class="review-meta">
+              <h4>On: Wild Dark Shore</h4>
+              <button class="delete-review"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="review-text">
+              "This book changed my perspective on nature and grief."
+            </div>
+          </div>
+          <div class="admin-review-item">
+            <div class="review-meta">
+              <h4>On: The Last Wish</h4>
+              <button class="delete-review"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="review-text">
+              "Fantastic introduction to the Witcher universe!"
+            </div>
+          </div>
+          <div class="admin-review-item">
+            <div class="review-meta">
+              <h4>On: The Midnight Library</h4>
+              <button class="delete-review"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="review-text">
+              "Made me reflect deeply on my life choices."
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-content" id="admins-tab">
+      <button class="add-btn"><i class="fas fa-user-plus"></i> Add Admin</button>
+      <table class="admin-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Maram Elasma</td>
+            <td>maram@sharereads.ly</td>
+            <td>
+              <button class="action-btn edit-btn"><i class="fas fa-edit"></i></button>
+              <button class="action-btn delete-btn"><i class="fas fa-trash"></i></button>
+            </td>
+          </tr>
+          <tr>
+            <td>Batool Bubtana</td>
+            <td>batool@sharereads.ly</td>
+            <td>
+              <button class="action-btn edit-btn"><i class="fas fa-edit"></i></button>
+              <button class="action-btn delete-btn"><i class="fas fa-trash"></i></button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <script src="js/admin.js"></script>
+</body>
+</html>

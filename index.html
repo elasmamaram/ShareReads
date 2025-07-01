@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShareReads - Where Book Lovers Connect</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">
+        <img src="images/purple3.png" alt="ShareReads Logo" />
+        <span class="logo-text">ShareReads</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#home" class="active"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#books"><i class="fas fa-book-open"></i> Books</a></li>
+        <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
+        <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+        <li><a href="login.html" id="loginLink"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section class="hero" id="home">
+      <h1>Share Your Reading Journey</h1>
+      <p class="tagline">"A reader lives a thousand lives before he dies." - George R.R. Martin</p>
+      <div class="quote-generator">
+        <p id="randomQuote">Click the button for an inspiring quote!</p>
+        <button id="newQuoteBtn">New Quote</button>
+      </div>
+    </section>
+
+    <section class="search-section">
+      <div class="container">
+        <form id="searchForm">
+          <div class="search-container">
+            <input type="text" placeholder="Search books by title, author, or description..." id="searchInput">
+            <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
+          </div>
+          <div class="search-results"></div>
+        </form>
+      </div>
+    </section>
+
+    <main class="book-list" id="books">
+      <h2>Featured Books</h2>
+      <div class="book-grid">
+        <article class="book-card">
+          <div class="book-cover-container">
+            <img src="images/th.webp" alt="Wild Dark Shore" class="book-cover" />
+          </div>
+          <div class="book-content">
+            <h2 class="book-title">Wild Dark Shore</h2>
+            <p class="book-author">Charlotte McConaghy</p>
+            <blockquote>"The wilderness has a way of breaking you open."</blockquote>
+            <p class="book-description">A lyrical novel exploring grief and our relationship with nature.</p>
+            <div class="review-section">
+              <h3>Leave Your Review:</h3>
+              <textarea placeholder="Share your thoughts"></textarea>
+              <button class="review-btn">Submit</button>
+              <div class="review-list"></div>
+            </div>
+          </div>
+        </article>
+
+        
+        <article class="book-card">
+          <div class="book-cover-container">
+            <img src="images/81ph7llrGvL._SL1500_.jpg" alt="The Last Wish" class="book-cover" />
+          </div>
+          <div class="book-content">
+            <h2 class="book-title">The Last Wish</h2>
+            <p class="book-author">Andrzej Sapkowski</p>
+            <blockquote>"Evil is evil. Lesser, greater, middling..."</blockquote>
+            <p class="book-description">The first book in the Witcher series featuring Geralt of Rivia.</p>
+            <div class="review-section">
+              <h3>Leave Your Review:</h3>
+              <textarea placeholder="Share your thoughts"></textarea>
+              <button class="review-btn">Submit</button>
+              <div class="review-list"></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="book-card">
+          <div class="book-cover-container">
+            <img src="images/18505747.jpg" alt="King of Ashes" class="book-cover" />
+          </div>
+          <div class="book-content">
+            <h2 class="book-title">King of Ashes</h2>
+            <p class="book-author">Raymond E. Feist</p>
+            <blockquote>"From the ashes of the old world, new legends shall rise."</blockquote>
+            <p class="book-description">A sweeping new epic following a hidden heir from a fallen kingdom.</p>
+            <div class="review-section">
+              <h3>Leave Your Review:</h3>
+              <textarea placeholder="Share your thoughts"></textarea>
+              <button class="review-btn">Submit</button>
+              <div class="review-list"></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="book-card">
+          <div class="book-cover-container">
+            <img src="images/219848315.jpg" alt="The Emperor of Gladness" class="book-cover" />
+          </div>
+          <div class="book-content">
+            <h2 class="book-title">The Emperor of Gladness</h2>
+            <p class="book-author">Ocean Vuong</p>
+            <blockquote>"Joy is the hardest thing to hold onto when you know how the story ends."</blockquote>
+            <p class="book-description">A poetic meditation on joy, grief, and the contradictions of memory.</p>
+            <div class="review-section">
+              <h3>Leave Your Review:</h3>
+              <textarea placeholder="Share your thoughts"></textarea>
+              <button class="review-btn">Submit</button>
+              <div class="review-list"></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="book-card">
+          <div class="book-cover-container">
+            <img src="images/R.jpeg" alt="Great Big Beautiful Life" class="book-cover" />
+          </div>
+          <div class="book-content">
+            <h2 class="book-title">Great Big Beautiful Life</h2>
+            <p class="book-author">Emily Henry</p>
+            <blockquote>"Happiness isn't something you find—it's something you build."</blockquote>
+            <p class="book-description">An emotionally resonant journey about rediscovering purpose and joy.</p>
+            <div class="review-section">
+              <h3>Leave Your Review:</h3>
+              <textarea placeholder="Share your thoughts"></textarea>
+              <button class="review-btn">Submit</button>
+              <div class="review-list"></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="book-card">
+          <div class="book-cover-container">
+            <img src="images/OIP (1).webp" alt="Iron Flame" class="book-cover" />
+          </div>
+          <div class="book-content">
+            <h2 class="book-title">Iron Flame</h2>
+            <p class="book-author">Rebecca Yarros</p>
+            <blockquote>"The price of power is always paid in blood."</blockquote>
+            <p class="book-description">The explosive sequel to Fourth Wing, continuing Violet's perilous path.</p>
+            <div class="review-section">
+              <h3>Leave Your Review:</h3>
+              <textarea placeholder="Share your thoughts"></textarea>
+              <button class="review-btn">Submit</button>
+              <div class="review-list"></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="book-card">
+          <div class="book-cover-container">
+            <img src="images/OIP (2).webp" alt="The Let Them Theory" class="book-cover" />
+          </div>
+          <div class="book-content">
+            <h2 class="book-title">The Let Them Theory</h2>
+            <p class="book-author">Mel Robbins</p>
+            <blockquote>"When you stop trying to control everything, you gain control."</blockquote>
+            <p class="book-description">A transformative approach to personal boundaries and authentic living.</p>
+            <div class="review-section">
+              <h3>Leave Your Review:</h3>
+              <textarea placeholder="Share your thoughts"></textarea>
+              <button class="review-btn">Submit</button>
+              <div class="review-list"></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="book-card">
+          <div class="book-cover-container">
+            <img src="images/OIP (3).webp" alt="The Midnight Library" class="book-cover" />
+          </div>
+          <div class="book-content">
+            <h2 class="book-title">The Midnight Library</h2>
+            <p class="book-author">Matt Haig</p>
+            <blockquote>"Between life and death there is a library."</blockquote>
+            <p class="book-description">A novel exploring the choices that shape our lives through infinite possibilities.</p>
+            <div class="review-section">
+              <h3>Leave Your Review:</h3>
+              <textarea placeholder="Share your thoughts"></textarea>
+              <button class="review-btn">Submit</button>
+              <div class="review-list"></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="book-card">
+          <div class="book-cover-container">
+            <img src="images/9781804990926.jpg" alt="Lessons in Chemistry" class="book-cover" />
+          </div>
+          <div class="book-content">
+            <h2 class="book-title">Lessons in Chemistry</h2>
+            <p class="book-author">Bonnie Garmus</p>
+            <blockquote>"Chemistry is change—and change is life."</blockquote>
+            <p class="book-description">A brilliant chemist defies expectations in 1960s America.</p>
+            <div class="review-section">
+              <h3>Leave Your Review:</h3>
+              <textarea placeholder="Share your thoughts"></textarea>
+              <button class="review-btn">Submit</button>
+              <div class="review-list"></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="book-card">
+          <div class="book-cover-container">
+            <img src="images/9780593321201_custom-329d20529955fe0f6c19eb82baf676fc2d86c1a1-s1100-c50.jpg" alt="Tomorrow, and Tomorrow, and Tomorrow" class="book-cover" />
+          </div>
+          <div class="book-content">
+            <h2 class="book-title">Tomorrow, and Tomorrow, and Tomorrow</h2>
+            <p class="book-author">Gabrielle Zevin</p>
+            <blockquote>"What is a game? It's tomorrow, and tomorrow, and tomorrow."</blockquote>
+            <p class="book-description">A story about friendship, creativity, and the art of making games.</p>
+            <div class="review-section">
+              <h3>Leave Your Review:</h3>
+              <textarea placeholder="Share your thoughts"></textarea>
+              <button class="review-btn">Submit</button>
+              <div class="review-list"></div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <section class="about-section" id="about">
+      <div class="book-cover-design">
+        <div class="book-spine"></div>
+        <div class="book-content">
+          <h2><i class="fas fa-feather-alt"></i> Our Story</h2>
+          <div class="about-grid">
+            <div class="founder-card">
+              <div class="founder-img" style="background-image: url('maram.jpg')"></div>
+              <h3>Maram Elasma</h3>
+              <p>Tech & Books Lover</p>
+              <div class="founder-social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </div>
+            </div>
+            
+            <div class="about-text">
+              <blockquote>
+                "This project was created as a learning experience for web development."
+              </blockquote>
+              <p>ShareReads is a student project developed in 2025 to demonstrate modern web development techniques.</p>
+              <p>The platform simulates a book community website with all core functionality, built using HTML5, CSS3, and JavaScript.</p>
+            </div>
+            
+            <div class="founder-card">
+              <div class="founder-img" style="background-image: url('batool.jpg')"></div>
+              <h3>Batool Bubtana</h3>
+              <p>Tech & Books Lover</p>
+              <div class="founder-social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="letter-design">
+        <div class="envelope-flap"></div>
+        <div class="contact-content">
+          <h2><i class="fas fa-envelope-open-text"></i> Write To Us</h2>
+          <div class="contact-methods">
+            <div class="contact-card">
+              <i class="fas fa-map-marker-alt"></i>
+              <h3>Visit Us</h3>
+              <p>University LIMU<br>Software Engineering Dept.</p>
+            </div>
+            
+            <form class="contact-form">
+              <div class="form-group">
+                <input type="text" placeholder="Your Name" required>
+              </div>
+              <div class="form-group">
+                <input type="email" placeholder="Your Email" required>
+              </div>
+              <div class="form-group">
+                <textarea placeholder="Your Message..." required></textarea>
+              </div>
+              <button type="submit">Send Message <i class="fas fa-paper-plane"></i></button>
+            </form>
+            
+            <div class="contact-card">
+              <i class="fas fa-at"></i>
+              <h3>Email Us</h3>
+              <p>contact@sharereads.ly<br>support@sharereads.ly</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <a href="#home"><img src="images/purple3.png" alt="ShareReads logo" class="footer-logo" /></a>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+      </div>
+      <p>&copy; 2025 ShareReads. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/index.js"></script>
+</body>
+</html>
